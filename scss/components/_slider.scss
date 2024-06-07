@@ -190,16 +190,16 @@
     }
 
     // 次に進む・前に戻るボタン
-    .swiper-button-prev,
-    .swiper-button-next{
-        &::after{
-            color: white !important;
-            filter: drop-shadow(1px 1px 3px black);
-            @include min(768){
+    // .swiper-button-prev,
+    // .swiper-button-next{
+    //     &::after{
+    //         color: white !important;
+    //         filter: drop-shadow(1px 1px 3px black);
+    //         @include min(768){
 
-            }
-        }
-    }
+    //         }
+    //     }
+    // }
 
     // 各スライダー > 共通パーツ > ドット
     .swiper-pagination{
@@ -223,4 +223,47 @@
 .swiper-3d .swiper-slide-shadow {
     background: none;
     // filter: drop-shadow(1px 1px 3px rgba(128, 128, 128, 0.507));
+}
+
+// 次に進む・前に戻るボタン
+.swiper-Cards{
+    .swiper-button-prev,
+    .swiper-button-next{
+        top: auto;
+        bottom: -25%;
+        height: 50px;
+        width: 50px;
+        @include min(768){
+            bottom: -20%;
+        }
+        &::after{
+            background-repeat: no-repeat;
+            background-size: contain;
+            content: "";
+            height: 50px;
+            margin: auto;
+            width: 50px;
+        }
+    }
+    /* 前への矢印カスタマイズ */
+    .swiper-button-prev{
+        left: 25%;
+        &::after {
+            background-image: url(../images/SVG/left.svg);
+        }
+    }
+    /* 次への矢印カスタマイズ */
+    .swiper-button-next{
+        right: 25%;
+        &::after {
+            background-image: url(../images/SVG/right.svg);
+        }
+    }
+
+    &.swiper-content{
+        @include min(768){
+        .swiper-button-prev{left: 35%;}
+        .swiper-button-next{right: 35%;}
+        }
+    }
 }

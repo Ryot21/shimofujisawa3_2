@@ -189,6 +189,7 @@
 
 	&__contactArea{
 		.contactItem{
+			transition: all 1s;
 			&:nth-child(1){
 				background: #cccccc;
 				a{
@@ -204,6 +205,7 @@
 						background: url(../images/SVG/request.svg);
 						background-repeat: no-repeat;
 					}
+
 				}
 			}
 			&:nth-child(2){
@@ -228,6 +230,10 @@
 				display: block;
 				width: 100%;
 				padding: 5% 0 15%;
+			}
+			&:hover{
+				background: $site-color03;
+				a{filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.212)) !important;}
 			}
 		}
 	}

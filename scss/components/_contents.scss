@@ -284,23 +284,22 @@
 			// ※関係
 			&.-kome{
 				bottom: 1%;
-				left: 95%;
+				left: 90%;
 				transform: translate(-50%, -50%);
+				@include min(768){
+					left: 95%;
+				}
 			}
 			
 			// コンテンツ > ボタン
 			&.-shopBtn01{// 物件詳細
 				top: 58.5%;
-				// top: 88.5%;
 				left: 72%;
-				// left: 47%;
 				transform: translate(-50%, -50%);
 				width: 25%;
 				@include min(768){
 					top: 84%;
-					// top: 78%;
 					left: 77%;
-					// left: 69%;
 					width: 12%;
 					max-width: 110px;
 				}
@@ -389,6 +388,56 @@
 					}
 				}
 			}
+			&.-bannerBtn{
+				@include min(768){
+					top: 80%;
+					left: 12%;
+					// left: 13.5%;
+					transform: translate(-50%, -50%);
+					width: 10%;
+				}
+				@include min(1200){
+					// left: 30%;
+					left: 12%;
+				}
+			}
+			&.-bannerBtn02{
+				top: 25%;
+				left: 80%;
+				transform: translate(-50%, -50%);
+				width: 35%;
+				@include min(768){
+					top: 80%;
+					left: 13.5%;
+					width: 15%;
+				}
+				@include min(1400){
+					top: 80%;
+					left: 11.5%;
+					width: 10%;
+				}
+			}
+			// ↓ Swiper関係の位置
+			&.-swiperContent01{
+				top: 60%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 75%;
+				@include min(768){
+					top: 50%;
+					left: 67%;
+					width: 60%;
+				}
+			}
+		}
+	}
+
+	&.-b-top_btm{
+		border-top: 1px solid #d4d4d5;
+		border-bottom: 1px solid #d4d4d5;
+		.c-contents-inner{
+			border-left: 1px solid #d4d4d5;
+			border-right: 1px solid #d4d4d5;
 		}
 	}
 }
