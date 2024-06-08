@@ -5,6 +5,10 @@
 }
 
 .c-contents{
+	&.color01_bg{
+		background: #e4e9ed;
+	}
+
 	&-inner{
 		width: 90%;
 		margin: auto;
@@ -285,7 +289,7 @@
 					left: 95%;
 				}
 			}
-			
+
 			// コンテンツ > ボタン
 			&.-shopBtn01{// 物件詳細
 				top: 58.5%;
@@ -370,6 +374,7 @@
 					}
 				}
 			}
+
 			// 完売御礼
 			&.-soldOut{
 				&_01{
@@ -412,6 +417,7 @@
 					width: 10%;
 				}
 			}
+
 			// ↓ Swiper関係の位置
 			&.-swiperContent01{
 				top: 60%;
@@ -438,6 +444,61 @@
 					top: 52%;
 					left: 80%;
 					width: 35%;
+				}
+			}
+			&.-swiperContent03{
+				top: 46%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 75%;
+				@include min(768){
+					top: 40%;
+					left: 68%;
+					width: 63%;
+				}
+				@include min(1200){
+					top: 44%;
+					left: 69%;
+					width: 57%;
+				}
+			}
+
+			// ↓ 設計士
+			&.-builder{
+				&-title{
+					top: 10%;
+					left: 50%;
+					width: auto;
+
+					@include min(768){
+						top: 12.5%;
+						left: 32%;
+						width: auto;
+					}
+				}
+				&-name{
+					top: 16%;
+					left: 50%;
+					width: auto;
+
+					@include min(768){
+						top: 25%;
+						left: 32%;
+						width: auto;
+					}
+				}
+				&-des{
+					top: 42%;
+					left: 7.5%;
+					width: 91%;
+					@include min(768){
+						top: 42%;
+						left: 32%;
+						width: 65%;
+					}
+					@include min(1200){
+						top: 44%;
+					}
 				}
 			}
 		}

@@ -1,6 +1,25 @@
 
 // 物件概要ポップアップ
+.c-popBtn{
+    width: 75%;
+    margin: auto;
+    background: $main-color--Dgray;
+    border: 1px solid $main-color--b;
+    transition: all .5s;
+    @include min(768){
+        max-width: 200px;
+        background: $main-color--w;
+    }
+    &:hover{
+        @include min(768){
+            background: $main-color--Dgray;
+            label{color: $main-color--w;}
+        }
+    }
+}
+
 #popup,
+#popup-imgBtn,
 #popup-madori01 {
     display: none;
     &:checked ~ .popup-overlay {
@@ -57,8 +76,10 @@
             width: 100%;
             height: 100%;
         }
-        &.-madoriImg {
-            height: auto;
+        &.-popImg {
+            height: 80lwh;
+            padding: 5%;
+            overflow-y: scroll;
         }
     }
     &-close {
