@@ -184,11 +184,6 @@
 	}
 	&.-f-view{//ファーストビュー
 		position: relative;
-		.imgBox{
-			@include max(768){
-				opacity: .75;
-			}
-		}
 		.c-contentsBox{
 			position: absolute;
 			&.-f-title{
@@ -427,6 +422,22 @@
 					top: 50%;
 					left: 67%;
 					width: 60%;
+				}
+			}
+			&.-swiperContent02{
+				top: 66%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 55%;
+				@include min(768){
+					top: 60%;
+					left: 75%;
+					width: 29%;
+				}
+				@include min(1200){
+					top: 52%;
+					left: 80%;
+					width: 35%;
 				}
 			}
 		}
