@@ -187,22 +187,22 @@
 				display: block;
 				padding: 5% 0;
 				text-align: center;
-				border: 1px solid $site-color02;
-				background: $site-color02;
+				border: 1px solid $main-color--b;
+				background: $main-color--b;
 				transition: .5s all;
 				@include min(768){
-					color: $site-color02;
+					color: $main-color--b;
 					background: $main-color--w;
 				}
 				span{
 					color: $main-color--w;
 					@include min(768){
-						color: $site-color02;
+						color: $main-color--b;
 					}
 				}
 				&:hover{
 					color: $main-color--w !important;
-					background: $site-color02 !important;
+					background: $main-color--Dgray !important;
 					// border-radius: 10px;
 					box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.295);
 				}
