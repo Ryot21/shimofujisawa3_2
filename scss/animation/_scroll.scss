@@ -18,31 +18,32 @@
 
 @keyframes scroll-onNav {
     0% {
-        pointer-events: none;
+        // pointer-events: none;
         opacity: 0;
     }
-    29%{
+    2%{
         pointer-events: all;
-        opacity: .9;
+        opacity: 1;
     }
-    30% {
+    50% {
         opacity: 1;
     }
     100% {
-        opacity: 1;
+       opacity: 1;
     }
 }
 
 @keyframes scroll-onBtn {
     0% {
-        pointer-events: none;
+        // pointer-events: none;
         opacity: 0;
     }
-    10%{
+    2%{
         pointer-events: all;
+        opacity: 1;
     }
     50% {
-        opacity: .5;
+        opacity: 1;
     }
     100% {
        opacity: 1;

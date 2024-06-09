@@ -3022,11 +3022,11 @@ button.swiper-pagination-bullet {
 .c-footer {
   width: 100vw;
   height: auto;
-  margin-bottom: 25%;
+  margin-bottom: 2%;
 }
 @media (width >= 768px) {
   .c-footer {
-    margin-bottom: 5%;
+    margin-bottom: 1%;
   }
 }
 .c-footer-wrapper {
@@ -3246,8 +3246,14 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-footer__shopArea {
-    width: 40%;
-    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+  }
+}
+@media (width >= 1100px) {
+  .c-footer__shopArea {
+    width: 95% !important;
+    max-width: 1100px;
   }
 }
 .c-footer__shopArea .c-footer__shopFlex {
@@ -3257,7 +3263,12 @@ button.swiper-pagination-bullet {
 @media (width >= 768px) {
   .c-footer__shopArea .c-footer__shopFlex {
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
+  }
+}
+@media (width >= 1600px) {
+  .c-footer__shopArea .c-footer__shopFlex {
+    justify-content: space-evenly;
   }
 }
 .c-footer__shopArea .c-footer__shopFlex li {
@@ -3271,13 +3282,17 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-footer__shopArea .c-footer__shopFlex li:nth-child(1) {
-    width: 40%;
+    width: 30%;
   }
 }
 @media (width >= 768px) {
   .c-footer__shopArea .c-footer__shopFlex li:nth-child(2) {
-    width: 60%;
-    padding-left: 5%;
+    width: 41%;
+  }
+}
+@media (width >= 1400px) {
+  .c-footer__shopArea .c-footer__shopFlex li:nth-child(2) {
+    width: 47%;
   }
 }
 
@@ -3287,7 +3302,6 @@ button.swiper-pagination-bullet {
   left: 86%;
   width: 33px;
   height: 0;
-  opacity: 0.7;
   z-index: 998;
 }
 @media (width >= 768px) {
@@ -3298,6 +3312,7 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 1200px) {
   .c-hnav {
+    top: 3.5%;
     left: 95.5%;
   }
 }
@@ -4134,12 +4149,12 @@ button.swiper-pagination-bullet {
     top: 80%;
     left: 12%;
     transform: translate(-50%, -50%);
-    width: 10%;
+    width: 15%;
   }
 }
 @media (width >= 1200px) {
   .c-contents.-imgBg .c-contentsBox.-bannerBtn {
-    left: 12%;
+    left: 14%;
   }
 }
 .c-contents.-imgBg .c-contentsBox.-bannerBtn02 {
@@ -6272,14 +6287,13 @@ a {
 }
 @keyframes scroll-onNav {
   0% {
-    pointer-events: none;
     opacity: 0;
   }
-  29% {
+  2% {
     pointer-events: all;
-    opacity: 0.9;
+    opacity: 1;
   }
-  30% {
+  50% {
     opacity: 1;
   }
   100% {
@@ -6288,14 +6302,14 @@ a {
 }
 @keyframes scroll-onBtn {
   0% {
-    pointer-events: none;
     opacity: 0;
   }
-  10% {
+  2% {
     pointer-events: all;
+    opacity: 1;
   }
   50% {
-    opacity: 0.5;
+    opacity: 1;
   }
   100% {
     opacity: 1;

@@ -5,13 +5,14 @@
     left: 86%;
 	width: 33px;
 	height: 0;
-	opacity: .7;
+	// opacity: .7;
 	z-index: 998;
 	@include min(768){
 		top: 1.5%;
 		left: 94%;
 	}
 	@include min(1200){
+		top: 3.5%;
 		left: 95.5%;
 	}
 	&__cheakbox{
