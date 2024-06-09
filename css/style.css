@@ -352,7 +352,7 @@ h1.s-3L, h2.s-3L, h3.s-3L, h4.s-3L, h5.s-3L, h6.s-3L, p.s-3L, a.s-3L, span.s-3L,
 }
 @media (width >= 768px) {
   h1.s-3L, h2.s-3L, h3.s-3L, h4.s-3L, h5.s-3L, h6.s-3L, p.s-3L, a.s-3L, span.s-3L, label.s-3L, button.s-3L {
-    font-size: clamp(2.1rem, 3vw, 4.8rem);
+    font-size: clamp(2.1rem, 2.5vw, 4rem);
   }
 }
 @media (768px >= width) {
@@ -1205,6 +1205,12 @@ span.-block {
   }
 }
 
+@media (768px >= width) {
+  .pdt20s {
+    padding-top: 20% !important;
+  }
+}
+
 @media (width >= 768px) {
   .pdt0 {
     padding-top: 0 !important;
@@ -1337,6 +1343,12 @@ span.-block {
 @media (768px >= width) {
   .pdb10s {
     padding-bottom: 10% !important;
+  }
+}
+
+@media (768px >= width) {
+  .pdb20s {
+    padding-bottom: 20% !important;
   }
 }
 
@@ -2815,17 +2827,11 @@ button.swiper-pagination-bullet {
 .c-header-wrapper {
   position: relative;
   align-items: center;
-  width: 95%;
+  width: 90%;
+  max-width: 1100px;
   height: auto;
-  padding: 5px 0px 5px;
+  padding: 10px 0px 10px;
   margin: auto;
-}
-@media (width >= 768px) {
-  .c-header-wrapper {
-    width: 90%;
-    max-width: 1100px;
-    padding: 0;
-  }
 }
 @media (width >= 1600px) {
   .c-header-wrapper {
@@ -3298,7 +3304,7 @@ button.swiper-pagination-bullet {
 
 .c-hnav {
   position: sticky;
-  top: 2%;
+  top: 2.1%;
   left: 86%;
   width: 33px;
   height: 0;
@@ -3983,7 +3989,7 @@ button.swiper-pagination-bullet {
   }
 }
 .c-contents.-f-view .c-contentsBox.-f-logo {
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 75%;
@@ -3991,8 +3997,8 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-contents.-f-view .c-contentsBox.-f-logo {
-    top: 50%;
-    width: 40%;
+    top: 46%;
+    width: 30%;
   }
 }
 .c-contents.-f-view .c-contentsBox.-f-des {
@@ -4002,20 +4008,20 @@ button.swiper-pagination-bullet {
 @media (width >= 768px) {
   .c-contents.-f-view .c-contentsBox.-f-des {
     top: 20%;
-    left: 46.5%;
+    left: 47.5%;
   }
 }
 .c-contents.-f-view .c-contentsBox.-f-subTitle {
-  top: 60%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 38%;
 }
 @media (width >= 768px) {
   .c-contents.-f-view .c-contentsBox.-f-subTitle {
-    top: 86%;
+    top: 79%;
     left: 50%;
-    width: 18%;
+    width: 13%;
   }
 }
 .c-contents.-imgBg {
